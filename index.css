@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#Game-conteiner{
+    width: 100rem;
+    height: 50rem;
+    background-color: black;
+    position: relative;
+}
+
+#barra{
+    width: 10rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 50px;
+    left: 700px;
+    animation: neonson 1.5s ease-in-out infinite alternate;
+    background-image: linear-gradient(45deg, rgb(73, 73, 73), rgb(73, 73, 73));
+    -webkit-background-clip: text;
+    background-clip: text;
+    border-style:outset;
+}
+
+@keyframes neonson {
+    0% {
+      text-shadow: 0 0 10px rgb(226, 226, 236), 0 0 20px  rgb(226, 226, 236), 0 0 30px  rgb(226, 226, 236);
+      box-shadow: 0 0 10px  rgb(226, 226, 236), 0 0 20px rgb(226, 226, 236), 0 0 30px  rgb(226, 226, 236);
+    }
+    100% {
+      text-shadow: 0 0 5px  rgb(226, 226, 236), 0 0 10px #9f6, 0 0 15px  rgb(226, 226, 236);
+      box-shadow: 0 0 5px  rgb(226, 226, 236), 0 0 10px #9f6, 0 0 15px  rgb(226, 226, 236);
+    }
+  }
+
+#bola {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    left: 770px;
+    top: 600px;
+    animation: neon 1.5s ease-in-out infinite alternate;
+    background-image: linear-gradient(45deg, #0400FF, #01d5ff);
+    /*-webkit-background-clip: text;
+    background-clip: text;*/
+}
+
+@keyframes neon {
+    0% {
+        
+    }
+    100% {
+        
+    }
+}
+                    /*100% {
+        text-shadow: 0 0 5px #0400FF, 0 0 10px #009F6, 0 0 15px #0400FF;
+        box-shadow: 0 0 5px #0400FF, 0 0 10px #009F6, 0 0 15px #0400FF;
+    }*/
+#Blocos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 96rem;
+    height: 55px;
+}
+
+.bloco{
+    width: 7rem;
+    height: 3rem;
+    background-color: transparent;
+    margin-right: 10px;
+
+}
+.insta{
+    position: relative;
+    left: 730px;
+    top: 300px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
