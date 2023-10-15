@@ -8,8 +8,8 @@ let barraX = 700;
 let bolaX = 700; //x horizontal 
 let bolaY = 600; //y vertical
 
-var bolaVLx = 5; 
-var bolaVLy = -5; 
+var bolaVLx = 6; 
+var bolaVLy = -6; 
 var JogoRodando = true;
 
 
@@ -69,7 +69,7 @@ function Lbola(){
     //verifica se a bola atingiu a parte inferior do contêiner do jogo. Se isso acontecer, o jogo é encerrado. 
     if(bolaY + bola.offsetHeight >= GameConteiner.offsetHeight ){
         JogoRodando = false
-        alert("Fim da Linha Gay 💀")
+        alert("Game Over Gay💀")
         return
     }
     //erifica se a bola colidiu com a barra controlada pelo jogador. Se isso acontecer, a direção vertical da bola é invertida, fazendo com que a bola rebata na barra.
@@ -96,9 +96,9 @@ function Lbola(){
 
     if (todosBlocosAtingidos()) {
         JogoRodando = false;
-        alert("Você ganhou o jogo!😱");
-        bolaVLx += 2; // Aumente a velocidade horizontal da bola.
-        bolaVLy -= 2; // Aumente a velocidade vertical da bola.
+        alert("Você ganhou o jogo!😱Agora dificuldade aumenta👹");
+        bolaVLx += 8; // Aumente a velocidade horizontal da bola.
+        bolaVLy -= 8; // Aumente a velocidade vertical da bola.
         reiniciarJogo(); // Inicie um novo jogo com a bola mais rápida.
         return;
     }
